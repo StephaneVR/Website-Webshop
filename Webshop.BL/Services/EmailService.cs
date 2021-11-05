@@ -19,7 +19,7 @@ namespace Webshop.BL
             mail.Body = body;
 
             SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("apschoolnet@gmail.com", "apNet123");
+            SmtpServer.Credentials = new System.Net.NetworkCredential("//Email", "//Pwd");
             SmtpServer.EnableSsl = true;
 
             SmtpServer.Send(mail);
@@ -38,7 +38,7 @@ namespace Webshop.BL
             mail.Attachments.Add(new Attachment(@"\Invoices\Bestelling.pdf"));
 
             SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("apschoolnet@gmail.com", "apNet123");
+            SmtpServer.Credentials = new System.Net.NetworkCredential("//Email", "//Pwd");
             SmtpServer.EnableSsl = true;
 
             SmtpServer.Send(mail);
